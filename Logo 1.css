@@ -1,0 +1,61 @@
+/* ---------- RESET ---------- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 72px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #0c2a32, #0c2a32ee 70%, #0c2a3200);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.brand {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 34px;
+  letter-spacing: 2px;
+  color: #eaf6ff;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 64px;
+  list-style: none;
+}
+.menu a {
+  font-family: "Georgia", "Times New Roman", serif;
+  text-decoration: none;
+  color: #eaf6ff;
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 6px;
+  transition: color .2s ease, border-color .2s ease;
+  border-bottom: 2px solid transparent;
+}
+.menu a:hover {
+  border-color: #ffffffaa;
+}
+
+.menu a.active {
+  color: #f9a66b;
+  border-bottom: 2px solid #f9a66b;
+}
+
+/* ---------- HERO IMAGE ---------- */
+.hero {
+  height: 100vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,0.05)),
+    url("https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?q=80&w=1920&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+/* push page content below fixed navbar */
+.spacer { height: 72px; }
